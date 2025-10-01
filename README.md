@@ -20,7 +20,7 @@ We use computer programs (models) to learn patterns from past transactions and p
 3. **Trains machine learning models**:  
    - **Logistic Regression**: A simple model to predict fraud.  
    - **Random Forest**: Uses multiple decision trees to improve predictions.  
-   - **Calibration**: Ensures predicted probabilities are reliable.  
+   - **Calibration**: Makes sure the model’s probability predictions are reliable.  
 
 4. **Evaluates the models**:  
    - Measures accuracy and ROC-AUC,which tells how well the model separates fraud from normal transactions.  
