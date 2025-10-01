@@ -20,13 +20,18 @@ We use computer programs (models) to learn patterns from past transactions and p
 3. **Trains machine learning models**:  
    - **Logistic Regression**: A simple model to predict fraud.  
    - **Random Forest**: Uses multiple decision trees to improve predictions.  
-   - **Calibration**: Makes sure the model’s probability predictions are reliable.  
+   - **Calibration**: Makes sure the model’s probability predictions are reliable.
 
-4. **Evaluates the models**:  
+4. **TimeSeriesSplit**:
+   - Keeps the time order of transactions (no random shuffling like in train/test split).
+   - Trains the model on past data and tests it on future data.
+   - Prevents "peeking into the future," which can give misleading results.
+
+5. **Evaluates the models**:  
    - Measures accuracy and ROC-AUC,which tells how well the model separates fraud from normal transactions.  
    - Produces reports showing detailed performance.  
 
-5. **Generates plots** :  
+6. **Generates plots** :  
    - **Fraud vs Normal distribution** – shows number of fraudulent transactions.  
    - **Correlation heatmap** – shows how features relate to fraud.  
    - **Calibration plots** – shows if predicted probabilities are realistic.  
